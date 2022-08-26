@@ -1,0 +1,607 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*************************************************************************************/
+html {
+   scroll-behavior: smooth;
+}
+
+.mainContent {
+    width: 1200px;
+    padding: 20px 30px;
+    margin: 0 auto;
+    color: #485E88; 
+    background: wheat; 
+    font-size: 16px; 
+    font-weight: 600; 
+    text-align: justify; 
+    line-height: 24px; 
+    border: 5px solid black;
+}    
+
+h1 {
+   text-align: center; 
+   color: blue;
+   font-size: 28px;
+}
+
+h2 {
+   text-align: center; 
+   color: blue;
+   font-size: 22px;
+}
+
+h3 {
+   color: blueviolet;
+   font-size: 18px;
+}
+
+h2 + p, h3 + p {
+   font-size: 16px;
+   border: 2px solid white;
+   font-style: italic;
+}
+
+a {
+   color: #485E88;
+   font-size: 20px;
+}
+
+.gotoTop {
+    font-size: 16px;
+    padding: 0 100px;
+ }
+
+#songs_fcdk, #songs_fcdk2 {
+   text-align: center; 
+   color: blue;
+   font-size: 22px;
+}
+
+.wrapper_cell, .wrapper_block {
+   width: 1200px;
+   margin: 0 auto; 
+   background: wheat; 
+   border: 5px solid black;
+   padding: 20px 30px;
+   font-size: 30px;
+  
+}
+
+.one, .two, .three {
+   width: 400px;
+   display: table-cell;
+   outline: 1px solid green;
+}
+
+
+.second_one, .second_two {
+   display: table-cell;
+}
+
+.second_one {
+   width: 800px;
+}
+
+.second_two {
+   width: 400px;
+}
+
+.four, .five, .six, .seven, .nine, .twelve, .eight, .thirteen, .fourteen, .fifteen, .sixteen, .seventeen  {
+   outline: 1px solid green;
+}
+
+/***************************************/
+
+.third_one, .twelve {
+   display: table-cell;
+   width: 600px;
+}
+
+.ten, .eleven {
+   display: table-cell;
+   outline: 1px solid green;
+   width: 300px;
+}
+ /**********************************/
+
+.fourth_two {
+   width: 800px;
+}
+
+.seventeen {
+   width: 400px;
+}
+
+.fourteen, .fourth_one {
+   width: 400px;
+   display: table-cell;
+}
+
+
+.fourth_two, .seventeen {
+   display: table-cell;
+}
+
+.first_1 {
+   font-size: 0;
+}
+
+.one_1, .two_1, .three_1 {
+   font-size: 30px;
+   width: 400px;
+   display: inline-block;
+   outline: 1px solid green;
+}
+
+.second_1 {
+   font-size: 0px;
+}
+
+.second_one_1, .second_two_1 {
+   display: inline-block;
+}
+
+.four_1, .five_1 {
+   outline: 1px solid green;
+   width: 800px;
+   font-size: 30px;
+}
+
+.six_1, .seven_1, .eight_1 {
+   outline: 1px solid green;
+   width: 400px;
+   font-size: 30px;
+}
+/**********************************************************/
+.third_1 {
+   font-size: 0px;
+}
+
+.third_one_1, .twelve_1 {
+   display: inline-block;
+   width: 600px;
+}
+ .nine_1 {
+   outline: 1px solid green;
+   font-size: 30px;
+ }
+
+.ten_1, .eleven_1 {
+   outline: 1px solid green;
+   font-size: 30px;
+   width: 300px;
+   display: inline-block;
+}
+
+.twelve_1 {
+   outline: 1px solid green;
+   font-size: 30px;
+}
+
+/*_________________________________________________________*/
+
+.fourth_1 {
+   font-size: 0px;
+}
+
+.fourth_two_1, .seventeen_1  {
+   display: inline-block;
+}
+
+.fourth_two_1{
+   width: 800px;
+}
+
+.seventeen_1 {
+   width: 400px;
+}
+
+.thirteen_1 {
+   font-size: 30px;
+   outline: 1px solid green;
+}
+
+.fourteen_1, .fourth_one_2 {
+   display: inline-block;
+   width: 400px;
+   font-size: 30px;
+}
+
+.fourteen_1, .fifteen_1, .sixteen_1 {
+   outline: 1px solid green;
+}
+
+.seventeen_1 {
+   outline: 1px solid green;
+   font-size: 30px;
+}
+
+/*___________________________________________________________________*/
+
+.wrapper_div {
+   width: 1200px;
+   margin: 0 auto; 
+   background: red; 
+   border: 5px solid black;
+   padding: 20px 30px;
+   font-size: 30px;
+}
+
+.clr {
+   clear: left;
+}
+
+.one_f, .two_f, .three_f, .four_f, .five_f, .six_f, .seven_f, .eight_f, .nine_f, .ten_f, .eleven_f, .twelve_f, .thirteen_f, .fourteen_f, .fifteen_f, .sixteen_f, .seventeen_f {
+   outline: 1px solid darkblue;
+} 
+
+.one_f, .two_f, .three_f {
+   width: 400px;
+   float: left;
+}
+
+.second_one_f {
+   width: 800px;
+}
+
+.second_two_f{
+   width: 400px;
+}
+
+.second_one_f, .second_two_f {
+   float: left;
+}
+
+.third_one_f, .twelve_f {
+   width: 600px;
+   float: left;
+}
+
+.ten_f, .eleven_f {
+   width: 300px;
+   float: left;
+}
+
+.fourth_two_f, .seventeen_f {
+   float: left;
+}
+
+.fourth_two_f {
+   width: 800px;
+}
+
+.seventeen_f {
+   width: 400px;
+}
+
+.fourteen_f, .fourth_one_f {
+   width: 400px;
+   float: left;
+}
+
+/*---------------------------------------------------*/
+
+.wrapper_after, .wrapper_flex, .wrapper_columns, .wrapper_areas {
+   width: 1200px;
+   margin: 0 auto; 
+   background: sandybrown; 
+   border: 5px solid black;
+   padding: 20px 30px;
+   font-size: 30px;
+}
+
+.first_a:after {
+   content: "";
+   display: block;
+   clear: left;
+}
+
+.one_a, .two_a, .three_a, .four_a, .five_a, .six_a, .seven_a, .eight_a, .nine_a, .ten_a, .eleven_a, .twelve_a, .thirteen_a, .fourteen_a, .fifteen_a, .sixteen_a, .seventeen_a {
+   outline: 1px solid white;
+} 
+
+.one_a, .two_a, .three_a {
+   width: 400px;
+   float: left;
+}
+
+.second_a:after {
+   content: "";
+   display: block;
+   clear: left;
+}
+
+.second_one_a {
+   width: 800px;
+}
+
+.second_two_a {
+   width: 400px;
+}
+
+.second_one_a, .second_two_a {
+   float: left;
+}
+
+.third_a:after {
+   content: "";
+   display: block;
+   clear: left;
+}
+
+.third_two_a:after {
+   content: "";
+   display: block;
+   clear: left;
+}
+
+.third_one_a, .twelve_a {
+   width: 600px;
+   float: left;
+}
+
+.ten_a, .eleven_a {
+   width: 300px;
+   float: left;
+}
+
+.fourth_a:after {
+   content: "";
+   display: block;
+   clear: left;
+}
+
+.fourth_three_a:after {
+   content: "";
+   display: block;
+   clear: left;
+}
+
+.fourth_two_a, .seventeen_a {
+   float: left;
+}
+
+.fourth_two_a {
+   width: 800px;
+}
+
+.seventeen_a {
+   width: 400px;
+}
+
+.fourteen_a, .fourth_one_a {
+   width: 400px;
+   float: left;
+}
+
+/**********************************************************************************/
+
+.one_af, .two_af, .three_af, .fourteen_af, .fourth_one_af, .seventeen_af, .second_two_af  {
+   flex: 0 1 400px;
+
+   ;
+   outline: 1px solid white;
+}
+
+.thirteen_af, .fourteen_af, .fifteen_af, .sixteen_af, .seventeen_af, .four_af, .five_af, .six_af, .seven_af, .eight_af, .nine_af, .ten_af, .eleven_af, .twelve_af {
+   outline: 1px solid white;
+}
+
+.second_one_af, .fourth_two_af {
+   flex: 0 1 800px;
+}
+
+.first_af, .second_af, .fourth_af, .fourth_three_af, .third_af, .third_two_af {
+   display: flex;
+}
+
+.third_one_af, .twelve_af {
+   flex: 0 1 600px;
+}
+
+.ten_af, .eleven_af {
+   flex: 0 1 300px;
+}
+
+
+/***************************************************************************/
+
+.text {
+   outline: 1px solid white;
+}
+
+.first_ac {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+
+.second_ac {
+   display: grid;
+   grid-template-columns: 800px 400px;
+}
+
+.third_two_ac {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+/*****************************************************************/
+
+.thirteen_aa, .fourteen_aa, .fifteen_aa, .sixteen_aa, .seventeen_aa, .nine_aa, .ten_aa, .eleven_aa, .twelve_aa, .one_aa, .two_aa, .three_aa, .four_aa, .five_aa, .six_aa, .seven_aa, .eight_aa {
+   outline: 1px solid white;
+}
+
+.first_aa{
+   display: grid;
+   grid-template-areas: "A B C";
+}
+
+.one_aa {
+   grid-area: A;
+}
+
+.two_aa {
+   grid-area: B;
+}
+
+.three_aa {
+   grid-area: C;
+}
+
+.second_aa {
+   display: grid;
+   grid-template-areas: "A1 B1";
+}
+
+.second_one_aa {
+   grid-area: A1;
+}
+
+.second_two_aa {
+   grid-area: B1;
+}
+
+.third_aa {
+   display: grid;
+   grid-template-areas: "A2 B2";
+}
+
+.third_one_aa {
+   grid-area: A2;
+}
+
+.twelve_aa {
+   grid-area: B2;
+}
+
+.third_two_aa {
+   display: grid;
+   grid-template-areas: "A3 A4";
+}
+
+.ten_aa {
+   grid-area: A3;
+}
+
+.eleven_aa {
+   grid-area: A4;
+}
+
+.fourth_aa {
+   display: grid;
+   grid-template-areas: "A5 B3";
+}
+
+.fourth_two_aa {
+   grid-area: A5;
+}
+
+.seventeen_aa {
+   grid-area: B3;
+}
+
+.fourth_three_aa {
+   display: grid;
+   grid-template-areas: "A6 A7";
+}
+
+.fourteen_aa {
+   grid-area: A6;
+}
+
+.fourth_one_aa {
+   grid-area: A7;
+}
+
+/******************************************************************************/
+.mainContent_photo {
+   width: 1200px;
+   padding: 20px 0px;
+   margin: 0 auto;
+   color: darkblue; 
+   background: wheat; 
+   }
+
+#ukrPremierLiga, #lChampions {
+   text-align: center;
+   font-size: 0;
+}
+
+.photo { 
+   display: inline-block;
+   position: relative;
+}
+
+.insert {
+   background: red; 
+   width: 100%;
+   height: 50px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-top: -25px;
+   margin-left: -50%;
+   line-height: 50px;
+   font-size: 30px;
+}
+
+.left_bar {
+   display: flex;
+   position: fixed;
+   outline: 1px solid darkblue;
+   top: 50%;
+   margin-top: -80px;
+   background: pink;
+   width: 120px;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.left_bar a {
+   width: 100%;
+   outline: 1px solid darkblue;
+   padding: 10px 0;
+   text-align: center;
+}
