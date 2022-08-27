@@ -163,7 +163,7 @@ a {
    display: table-cell;
 }
 
-.first_1 {
+.first_1б .one_1, .two_1, .three_1 {
    font-size: 0;
 }
 
@@ -172,10 +172,6 @@ a {
    width: 400px;
    display: inline-block;
    outline: 1px solid green;
-}
-
-.second_1 {
-   font-size: 0px;
 }
 
 .second_one_1, .second_two_1 {
@@ -192,10 +188,6 @@ a {
    outline: 1px solid green;
    width: 400px;
    font-size: 30px;
-}
-/**********************************************************/
-.third_1 {
-   font-size: 0px;
 }
 
 .third_one_1, .twelve_1 {
@@ -217,12 +209,6 @@ a {
 .twelve_1 {
    outline: 1px solid green;
    font-size: 30px;
-}
-
-/*_________________________________________________________*/
-
-.fourth_1 {
-   font-size: 0px;
 }
 
 .fourth_two_1, .seventeen_1  {
@@ -331,7 +317,7 @@ a {
    font-size: 30px;
 }
 
-.first_a:after {
+.restriction:after {
    content: "";
    display: block;
    clear: left;
@@ -346,12 +332,6 @@ a {
    float: left;
 }
 
-.second_a:after {
-   content: "";
-   display: block;
-   clear: left;
-}
-
 .second_one_a {
    width: 800px;
 }
@@ -364,18 +344,6 @@ a {
    float: left;
 }
 
-.third_a:after {
-   content: "";
-   display: block;
-   clear: left;
-}
-
-.third_two_a:after {
-   content: "";
-   display: block;
-   clear: left;
-}
-
 .third_one_a, .twelve_a {
    width: 600px;
    float: left;
@@ -384,18 +352,6 @@ a {
 .ten_a, .eleven_a {
    width: 300px;
    float: left;
-}
-
-.fourth_a:after {
-   content: "";
-   display: block;
-   clear: left;
-}
-
-.fourth_three_a:after {
-   content: "";
-   display: block;
-   clear: left;
 }
 
 .fourth_two_a, .seventeen_a {
@@ -579,11 +535,14 @@ a {
    height: 50px;
    position: absolute;
    top: 50%;
-   left: 50%;
    margin-top: -25px;
-   margin-left: -50%;
    line-height: 50px;
    font-size: 30px;
+   visibility: hidden;
+}
+
+.photo:hover > .insert {
+   visibility: visible;
 }
 
 .left_bar {
