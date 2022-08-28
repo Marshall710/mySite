@@ -517,6 +517,8 @@ a {
    margin: 0 auto;
    color: darkblue; 
    background: wheat; 
+   border: 5px solid black;
+   font-weight: 600; 
    }
 
 #ukrPremierLiga, #lChampions {
@@ -575,7 +577,7 @@ ul {
 
 ul li {
    display: inline-block;
-   font-size: 20x;
+  
    border: 1px solid darkblue;
    position: relative;
    width: 120px;
@@ -593,9 +595,10 @@ ul ul {
    position: absolute;
    top: 100%;
    left: 0;
-   /* height: 0; */
-   /* overflow: hidden; */
+   height: 0; 
+   overflow: hidden;
    padding: 28px 0 0;
+   z-index: 2;
 }
 
 ul ul a {
@@ -606,15 +609,17 @@ ul ul a {
    padding: 5px;
 }
 
-ul ul ul:nth-child(3n) {
-   right: 100%;
-   top: 0;   
-}
-
-ul ul ul:nth-child(5n) {
+.b_float {
    left: 100%;
    top: 0;   
 }
-/* ul li:hover ul {
+
+.b_grid {
+   left: 100%;
+   top: 0;
+}
+
+
+ul li:hover ul {
    height: auto;
-} */
+}
