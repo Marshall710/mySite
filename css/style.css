@@ -564,3 +564,57 @@ a {
    padding: 10px 0;
    text-align: center;
 }
+
+/**************************************************************************/
+
+ul {
+   text-align: center;
+   font-size: 0;
+   margin-top: -20px;
+}
+
+ul li {
+   display: inline-block;
+   font-size: 20x;
+   border: 1px solid darkblue;
+   position: relative;
+   width: 120px;
+}
+
+ul li a {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: black;
+   padding: 10px;
+   display: block;
+}
+
+ul ul {
+   position: absolute;
+   top: 100%;
+   left: 0;
+   /* height: 0; */
+   /* overflow: hidden; */
+   padding: 28px 0 0;
+}
+
+ul ul a {
+   background-color: aliceblue;
+   font-size: 10px;
+   color: blueviolet;
+   text-decoration: underline;
+   padding: 5px;
+}
+
+ul ul ul:nth-child(3n) {
+   right: 100%;
+   top: 0;   
+}
+
+ul ul ul:nth-child(5n) {
+   left: 100%;
+   top: 0;   
+}
+/* ul li:hover ul {
+   height: auto;
+} */
