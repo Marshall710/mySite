@@ -97,7 +97,7 @@ a {
    color: blue;
    font-size: 22px;
 }
-
+/***********************************************/
 .wrapper_cell, .wrapper_block {
    width: 1200px;
    margin: 0 auto; 
@@ -105,7 +105,7 @@ a {
    border: 5px solid black;
    padding: 20px 30px;
    font-size: 30px;
-  
+   font-weight: 600; 
 }
 
 .one, .two, .three {
@@ -252,6 +252,7 @@ a {
    border: 5px solid black;
    padding: 20px 30px;
    font-size: 30px;
+   font-weight: 600; 
 }
 
 .clr {
@@ -315,6 +316,7 @@ a {
    border: 5px solid black;
    padding: 20px 30px;
    font-size: 30px;
+   font-weight: 600; 
 }
 
 .restriction:after {
@@ -592,10 +594,9 @@ ul li a {
 
 ul ul {
    position: absolute;
-   top: 100%;
-   left: 0;
    /* height: 0; 
    overflow: hidden; */
+   display: none;
    padding: 28px 0 0;
    z-index: 2;
 }
@@ -608,29 +609,41 @@ ul ul a {
    padding: 5px;
 }
 
-li > .b_float{
+.b_float{
    position: relative;
 }
 
-.b_float {
+.b_float > ul {
    position: absolute;
    right: 100%;
-   bottom: 0;   
-   padding: 0 25px;
+   bottom: 0;  
+   padding: 0 10px 0 0;
+   height: 0; 
+   overflow: hidden;
 }
 
-li > .b_grid {
-   position: relative;
+.b_float:hover ul {
+   height: auto;
+}
+
+.b_grid:hover ul {
+   height: auto;
 }
 
 .b_grid {
+   position: relative;
+}
+
+.b_grid > ul {
    position: absolute;
    left: 100%;
    top: 0;
-   padding: 0 25px;
+   padding: 0 0 0 10px;
+   height: 0; 
+   overflow: hidden;
 }
 
-
-/* ul li:hover ul {
-   height: auto;
-} */
+ul li:hover ul {
+   /* height: auto; */
+   display: block;
+}
