@@ -598,20 +598,14 @@ a {
 
 .menu ul {
    position: absolute;
-   height: 0; 
-   overflow: hidden;
-   /* display: none; */
+   display: none;
    padding: 10px 0 0;
    z-index: 1;
 }
 
 .menu ul a {
-   color: blueviolet;
    font-size: 10px;
-}
-
-.b_float{
-   position: relative;
+   color: blueviolet;
 }
 
 .b_float > ul {
@@ -619,22 +613,11 @@ a {
    right: 100%;
    bottom: 0;  
    padding: 0 10px 0 0;
-   height: 0; 
-   overflow: hidden;
-   /* display: none; */
+   display: none;
 }
 
 .b_float:hover ul {
-   /* display: block; */
-   height: auto;
-}
-
-.b_grid:hover ul {
-   height: auto;
-}
-
-.b_grid {
-   position: relative;
+   display: block;
 }
 
 .b_grid > ul {
@@ -642,11 +625,8 @@ a {
    left: 100%;
    top: 0;
    padding: 0 0 0 10px;
-   height: 0; 
-   overflow: hidden;
 }
 
-ul li:hover ul {
-   height: auto;
-   /* display: block; */
+.menu li:hover > ul {
+   display: block;
 }
