@@ -316,7 +316,8 @@ a {
    border: 5px solid black;
    padding: 20px 30px;
    font-size: 30px;
-   font-weight: 600; 
+   font-weight: 600;
+
 }
 
 .restriction:after {
@@ -571,42 +572,42 @@ a {
 
 /**************************************************************************/
 
-ul {
+.menu {
    text-align: center;
    font-size: 0;
-   margin-top: -20px;
+   line-height: 24px;
+   margin-bottom: 20px;
 }
 
-ul li {
+.menu li {
    display: inline-block;
    border: 1px solid darkblue;
    position: relative;
    width: 120px;
 }
 
-ul li a {
+.menu li a {
    text-decoration: none;
    text-transform: uppercase;
    color: black;
    padding: 10px;
    display: block;
-}
-
-ul ul {
-   position: absolute;
-   /* height: 0; 
-   overflow: hidden; */
-   display: none;
-   padding: 28px 0 0;
-   z-index: 2;
-}
-
-ul ul a {
    background-color: aliceblue;
-   font-size: 10px;
+   font-size: 14px;
+}
+
+.menu ul {
+   position: absolute;
+   height: 0; 
+   overflow: hidden;
+   /* display: none; */
+   padding: 10px 0 0;
+   z-index: 1;
+}
+
+.menu ul a {
    color: blueviolet;
-   text-decoration: underline;
-   padding: 5px;
+   font-size: 10px;
 }
 
 .b_float{
@@ -620,9 +621,11 @@ ul ul a {
    padding: 0 10px 0 0;
    height: 0; 
    overflow: hidden;
+   /* display: none; */
 }
 
 .b_float:hover ul {
+   /* display: block; */
    height: auto;
 }
 
@@ -644,6 +647,6 @@ ul ul a {
 }
 
 ul li:hover ul {
-   /* height: auto; */
-   display: block;
+   height: auto;
+   /* display: block; */
 }
