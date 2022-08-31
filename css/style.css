@@ -608,10 +608,9 @@ a {
 
 .menu li:last-child ul a {
    font-size: 10px;
-   color: blueviolet;
 }
 
-.block > .b_float {
+.block > .b_float, .block > .b_grid {
    position: relative;
 }
 
@@ -624,10 +623,6 @@ a {
    display: none;
 }
 
-.block > .b_grid {
-   position: relative;
-}
-
 .b_grid > ul {
    width: 120px;
    position: absolute;
@@ -637,18 +632,11 @@ a {
    display: none;
 }
 
- ul > li {
-   border: 1px solid darkblue;
+ .menu li:hover > a  {
+   color: white;
+   background-color: #485E88;
  }
 
- .b_float:hover ul {
-   display: block;
-}
-
-.b_grid:hover ul {
-   display: block;
-}
-
-.menu li:hover > ul {
+ .menu li:hover > ul {
    display: block;
 }
