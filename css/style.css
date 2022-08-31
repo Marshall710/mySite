@@ -585,6 +585,7 @@ a {
    border: 1px solid darkblue;
    position: relative;
    width: 120px;
+   font-size: 14px;
 }
 
 .menu a {
@@ -594,7 +595,6 @@ a {
    padding: 10px;
    display: block;
    background-color: aliceblue;
-   font-size: 14px;
 }
 
 .block {
