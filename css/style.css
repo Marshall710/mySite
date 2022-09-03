@@ -637,6 +637,24 @@ a {
    background-color: #485E88;
  }
 
- .menu li:hover > ul {
+ li:hover > ul {
    display: block;
 }
+
+.socialnetwork {
+   font-size: 0;
+   text-align: center;
+}
+
+.socialnetwork > li {
+   display: inline-block;
+   font-size: 14px;
+}
+
+.socialnetwork li a {
+   width: 281px;
+   height: 207px;
+   display: block;
+   background: url('../img/css_sprites.png');
+}
+
