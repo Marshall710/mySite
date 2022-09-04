@@ -584,17 +584,65 @@ a {
    display: inline-block;
    border: 1px solid darkblue;
    position: relative;
-   width: 120px;
+   width: 150px;
    font-size: 14px;
 }
 
-.menu a {
+.menu li  a {
    text-decoration: none;
    text-transform: uppercase;
    color: black;
    padding: 10px;
    display: block;
    background-color: aliceblue;
+   padding: 10px;
+}
+
+.home:before {
+   content: "";
+   background: url('../img/css_sprites.png');
+   background-position: -90px 0;
+   position: absolute;
+   left: 0;
+   top: 7px;
+   width: 30px;
+   height: 30px;
+}
+
+.menu li .gallery, .menu .home {
+   /* background-color: aliceblue; */
+   padding: 13px 15px 13px 33px;
+}
+
+.gallery:before {
+   content: "";
+   background: url('../img/css_sprites.png');
+   background-position: -120px 0;
+   position: absolute;
+   left: 0;
+   top: 10px;
+   width: 30px;
+   height: 30px;
+}
+
+.menu li .menu_block {
+   /* background-color: aliceblue; */
+   padding: 13px 15px 13px 15px;
+}
+
+.menu_block:after {
+   content: "";
+   background: url('../img/css_sprites.png');
+   background-position: -150px 0;
+   position: absolute;
+   right: 3px;
+   top: 9px;
+   width: 30px;
+   height: 30px;
+}
+
+li:hover .menu_block:after{
+   background-position: -150px -30px;
 }
 
 .block {
@@ -603,11 +651,12 @@ a {
    padding: 10px 0 0;
    top: 100%;
    left: 0;
-   width: 120px;
+   width: 150px;
 }
 
 .menu li:last-child ul a {
    font-size: 10px;
+   background-color: aliceblue;
 }
 
 .block > .b_float, .block > .b_grid {
@@ -623,6 +672,21 @@ a {
    display: none;
 }
 
+.b_float > a::before {
+   content: "";
+   background: url('../img/css_sprites.png');
+   background-position: -180px -30px;
+   position: absolute;
+   left: 0px;
+   top: 7px;
+   width: 30px;
+   height: 30px;
+}
+ 
+.b_float:hover > a::before {
+   background-position: -180px 0;
+}
+
 .b_grid > ul {
    width: 120px;
    position: absolute;
@@ -632,14 +696,31 @@ a {
    display: none;
 }
 
- .menu li:hover > a  {
+.b_grid > a:after{
+   content: "";
+   background: url('../img/css_sprites.png');
+   background-position: -180px 0;
+   position: absolute;
+   right: 0px;
+   top: 7px;
+   width: 30px;
+   height: 30px;
+}
+
+.b_grid:hover > a:after{
+   background-position: -180px -30px;
+}
+
+.menu ul:hover li:hover > a  {
    color: white;
    background-color: #485E88;
- }
+}
 
  li:hover > ul {
    display: block;
 }
+
+/* MenuSocial */
 
 .socialnetwork {
    font-size: 0;
@@ -652,9 +733,39 @@ a {
 }
 
 .socialnetwork li a {
-   width: 281px;
-   height: 207px;
    display: block;
+   padding: 2px 20px 13px 49px;
+   position: relative;
+}
+
+.socialnetwork li a:before {
+   content: "";
+   width: 30px;
+   height: 30px;
    background: url('../img/css_sprites.png');
+   transition: all .3s ease;
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+
+.socialnetwork li+li a:before  {
+   background-position: -30px 0;
+}
+
+.socialnetwork li+li+li a:before  {
+   background-position: -60px 0;
+}
+
+.socialnetwork li:hover a:before  { 
+   background-position: 0 -30px;
+}
+
+.socialnetwork li+li:hover a:before  {
+   background-position: -30px -30px;
+}
+
+.socialnetwork li+li+li:hover a:before  {
+   background-position: -60px -30px;
 }
 
