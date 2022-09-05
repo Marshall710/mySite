@@ -571,7 +571,7 @@ a {
 
 /**************************************************************************/
 
-.menu {
+/*.menu {
    text-align: center;
    font-size: 0;
    line-height: 24px;
@@ -582,21 +582,21 @@ a {
 
 .menu > li {
    display: inline-block;
-   /* border: 1px solid darkblue; */
+   /* border: 1px solid darkblue; 
    position: relative;
    font-size: 14px;
 }
 
-.menu li a {
+/*.menu li a {
    text-decoration: none;
    text-transform: uppercase;
    color: black;
    padding: 10px;
    display: block;
-   /* background-color: aliceblue; */
+   /* background-color: aliceblue; 
 }
 
-.home:before {
+/*.home:before {
    content: "";
    background: url('../img/css_sprites.png');
    background-position: -90px 0;
@@ -607,12 +607,12 @@ a {
    height: 30px;
 }
 
-.menu li .gallery, .menu .home {
-   /* background-color: aliceblue; */
+.menu li .gallery, .menu li .home {
+   /* background-color: aliceblue; 
    padding: 13px 15px 13px 33px;
 }
 
-.gallery:before {
+/*.gallery:before {
    content: "";
    background: url('../img/css_sprites.png');
    background-position: -120px 0;
@@ -624,11 +624,11 @@ a {
 }
 
 .menu li .menu_block {
-   /* background-color: aliceblue; */
+   /* background-color: aliceblue; 
    padding: 13px 38px 13px 12px;
 }
 
-.menu_block:after {
+/*.menu_block:after {
    content: "";
    background: url('../img/css_sprites.png');
    background-position: -150px 0;
@@ -654,10 +654,10 @@ li:hover .menu_block:after{
 
 .menu li:last-child ul a {
    font-size: 10px;
-   background-color: aliceblue;
+   /* background-color: aliceblue; 
 }
 
-.block > .b_float, .block > .b_grid {
+./*block > .b_float, .block > .b_grid {
    position: relative;
    
 }
@@ -710,7 +710,7 @@ li:hover .menu_block:after{
    background-position: -180px -30px;
 }
 
-.menu li:hover > a  {
+.menu > li:hover a  {
    color: white;
    background-color: #485E88;
 }
@@ -737,7 +737,7 @@ li:hover .menu_block:after{
    position: relative;
 }
 
-.socialnetwork li a:before {
+li a:before {
    content: "";
    width: 30px;
    height: 30px;
@@ -768,3 +768,100 @@ li:hover .menu_block:after{
    background-position: -60px -30px;
 }
 
+.menu {
+   font-size: 0;
+   text-align: center;
+}
+
+.menu > li {
+   display: inline-block;
+   font-size: 14px;
+}
+
+.menu > li  a {
+   display: block;
+   padding: 4px 19px 4px 49px;
+   position: relative;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+.home > a:before{
+   background-position: -90px 0;
+}
+
+.gallery > a:before {
+   background-position: -120px 0;
+}
+
+.menu > .menu_block a {
+   display: block;
+   padding: 4px 49px 4px 4px;
+   position: relative;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+.menu_block > a::before {
+   content: none;
+}
+
+.menu_block > a:after {
+   content: "";
+   width: 30px;
+   height: 30px;
+   background: url('../img/css_sprites.png');
+   position: absolute;
+   top: 0;
+   background-position: -150px 0;
+   right: 0;
+}
+
+.menu_block  {
+   position: relative;
+}
+
+.block {
+   position: absolute;
+   /* display: none; */
+   padding: 10px 0 0;
+   top: 100%;
+   left: 0;
+   width: 123px;
+}
+
+.block li a:before {
+   content: none;
+}
+
+.block > .b_float, .block > .b_grid {
+   position: relative;
+}
+
+.b_float > ul {
+   width: 120px;
+   position: absolute;
+   right: 100%;
+   bottom: 0;  
+   padding: 0 10px 0 0;
+   /* display: none; */
+}
+
+.b_grid > ul {
+   width: 120px;
+   position: absolute;
+   left: 100%;
+   top: 0;
+   padding: 0 0 0 10px;
+   /* display: none; */
+}
+
+.block a {
+   font-size: 10px;
+   padding: 10px;
+}
+
+.menu > li:hover a  {
+   color: white;
+   background-color: #485E88;
+}
