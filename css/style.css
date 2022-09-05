@@ -582,20 +582,18 @@ a {
 
 .menu > li {
    display: inline-block;
-   border: 1px solid darkblue;
+   /* border: 1px solid darkblue; */
    position: relative;
-   width: 150px;
    font-size: 14px;
 }
 
-.menu li  a {
+.menu li a {
    text-decoration: none;
    text-transform: uppercase;
    color: black;
    padding: 10px;
    display: block;
-   background-color: aliceblue;
-   padding: 10px;
+   /* background-color: aliceblue; */
 }
 
 .home:before {
@@ -627,7 +625,7 @@ a {
 
 .menu li .menu_block {
    /* background-color: aliceblue; */
-   padding: 13px 15px 13px 15px;
+   padding: 13px 38px 13px 12px;
 }
 
 .menu_block:after {
@@ -651,7 +649,7 @@ li:hover .menu_block:after{
    padding: 10px 0 0;
    top: 100%;
    left: 0;
-   width: 150px;
+   width: 123px;
 }
 
 .menu li:last-child ul a {
@@ -661,6 +659,7 @@ li:hover .menu_block:after{
 
 .block > .b_float, .block > .b_grid {
    position: relative;
+   
 }
 
 .b_float > ul {
@@ -672,7 +671,7 @@ li:hover .menu_block:after{
    display: none;
 }
 
-.b_float > a::before {
+.b_float > a:before {
    content: "";
    background: url('../img/css_sprites.png');
    background-position: -180px -30px;
@@ -683,7 +682,7 @@ li:hover .menu_block:after{
    height: 30px;
 }
  
-.b_float:hover > a::before {
+.b_float:hover > a:before {
    background-position: -180px 0;
 }
 
@@ -711,7 +710,7 @@ li:hover .menu_block:after{
    background-position: -180px -30px;
 }
 
-.menu ul:hover li:hover > a  {
+.menu li:hover > a  {
    color: white;
    background-color: #485E88;
 }
