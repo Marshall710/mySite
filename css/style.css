@@ -579,14 +579,12 @@ a {
    z-index: 5;
    position: relative;
 }
-
 .menu > li {
    display: inline-block;
    /* border: 1px solid darkblue; 
    position: relative;
    font-size: 14px;
 }
-
 /*.menu li a {
    text-decoration: none;
    text-transform: uppercase;
@@ -595,7 +593,6 @@ a {
    display: block;
    /* background-color: aliceblue; 
 }
-
 /*.home:before {
    content: "";
    background: url('../img/css_sprites.png');
@@ -606,12 +603,10 @@ a {
    width: 30px;
    height: 30px;
 }
-
 .menu li .gallery, .menu li .home {
    /* background-color: aliceblue; 
    padding: 13px 15px 13px 33px;
 }
-
 /*.gallery:before {
    content: "";
    background: url('../img/css_sprites.png');
@@ -622,12 +617,10 @@ a {
    width: 30px;
    height: 30px;
 }
-
 .menu li .menu_block {
    /* background-color: aliceblue; 
    padding: 13px 38px 13px 12px;
 }
-
 /*.menu_block:after {
    content: "";
    background: url('../img/css_sprites.png');
@@ -638,11 +631,9 @@ a {
    width: 30px;
    height: 30px;
 }
-
 li:hover .menu_block:after{
    background-position: -150px -30px;
 }
-
 .block {
    position: absolute;
    display: none;
@@ -651,17 +642,14 @@ li:hover .menu_block:after{
    left: 0;
    width: 123px;
 }
-
 .menu li:last-child ul a {
    font-size: 10px;
    /* background-color: aliceblue; 
 }
-
 ./*block > .b_float, .block > .b_grid {
    position: relative;
    
 }
-
 .b_float > ul {
    width: 120px;
    position: absolute;
@@ -670,7 +658,6 @@ li:hover .menu_block:after{
    padding: 0 10px 0 0;
    display: none;
 }
-
 .b_float > a:before {
    content: "";
    background: url('../img/css_sprites.png');
@@ -685,7 +672,6 @@ li:hover .menu_block:after{
 .b_float:hover > a:before {
    background-position: -180px 0;
 }
-
 .b_grid > ul {
    width: 120px;
    position: absolute;
@@ -694,7 +680,6 @@ li:hover .menu_block:after{
    padding: 0 0 0 10px;
    display: none;
 }
-
 .b_grid > a:after{
    content: "";
    background: url('../img/css_sprites.png');
@@ -705,20 +690,16 @@ li:hover .menu_block:after{
    width: 30px;
    height: 30px;
 }
-
 .b_grid:hover > a:after{
    background-position: -180px -30px;
 }
-
 .menu > li:hover a  {
    color: white;
    background-color: #485E88;
 }
-
  li:hover > ul {
    display: block;
 }
-
 /* MenuSocial */
 
 .socialnetwork {
@@ -776,9 +757,10 @@ li a:before {
 .menu > li {
    display: inline-block;
    font-size: 14px;
+   border: 1px solid blue;
 }
 
-.menu > li  a {
+.menu > li > a {
    display: block;
    padding: 4px 19px 4px 49px;
    position: relative;
@@ -794,9 +776,9 @@ li a:before {
    background-position: -120px 0;
 }
 
-.menu > .menu_block a {
+.menu > .menu_block > a {
    display: block;
-   padding: 4px 49px 4px 4px;
+   padding: 4px 49px 4px 25px;
    position: relative;
    text-decoration: none;
    text-transform: uppercase;
@@ -812,9 +794,9 @@ li a:before {
    height: 30px;
    background: url('../img/css_sprites.png');
    position: absolute;
-   top: 0;
+   top: 1px;
    background-position: -150px 0;
-   right: 0;
+   right: 4px;
 }
 
 .menu_block  {
@@ -858,10 +840,11 @@ li a:before {
 
 .block a {
    font-size: 10px;
-   padding: 10px;
+   padding: 10px 10px 49px 4px;
 }
 
 .menu > li:hover a  {
    color: white;
    background-color: #485E88;
 }
+
