@@ -585,7 +585,8 @@ a {
    position: relative;
    font-size: 14px;
 }
-/*.menu li a {
+
+.menu a {
    text-decoration: none;
    text-transform: uppercase;
    color: black;
@@ -593,231 +594,23 @@ a {
    display: block;
    /* background-color: aliceblue; 
 }
-/*.home:before {
-   content: "";
-   background: url('../img/css_sprites.png');
-   background-position: -90px 0;
-   position: absolute;
-   left: 0;
-   top: 7px;
-   width: 30px;
-   height: 30px;
-}
-.menu li .gallery, .menu li .home {
-   /* background-color: aliceblue; 
-   padding: 13px 15px 13px 33px;
-}
-/*.gallery:before {
-   content: "";
-   background: url('../img/css_sprites.png');
-   background-position: -120px 0;
-   position: absolute;
-   left: 0;
-   top: 10px;
-   width: 30px;
-   height: 30px;
-}
-.menu li .menu_block {
-   /* background-color: aliceblue; 
-   padding: 13px 38px 13px 12px;
-}
-/*.menu_block:after {
-   content: "";
-   background: url('../img/css_sprites.png');
-   background-position: -150px 0;
-   position: absolute;
-   right: 3px;
-   top: 9px;
-   width: 30px;
-   height: 30px;
-}
-li:hover .menu_block:after{
-   background-position: -150px -30px;
-}
+
 .block {
    position: absolute;
    display: none;
    padding: 10px 0 0;
    top: 100%;
    left: 0;
-   width: 123px;
+   width: 120px;
 }
+
 .menu li:last-child ul a {
    font-size: 10px;
-   /* background-color: aliceblue; 
-}
-./*block > .b_float, .block > .b_grid {
-   position: relative;
-   
-}
-.b_float > ul {
-   width: 120px;
-   position: absolute;
-   right: 100%;
-   bottom: 0;  
-   padding: 0 10px 0 0;
-   display: none;
-}
-.b_float > a:before {
-   content: "";
-   background: url('../img/css_sprites.png');
-   background-position: -180px -30px;
-   position: absolute;
-   left: 0px;
-   top: 7px;
-   width: 30px;
-   height: 30px;
-}
- 
-.b_float:hover > a:before {
-   background-position: -180px 0;
-}
-.b_grid > ul {
-   width: 120px;
-   position: absolute;
-   left: 100%;
-   top: 0;
-   padding: 0 0 0 10px;
-   display: none;
-}
-.b_grid > a:after{
-   content: "";
-   background: url('../img/css_sprites.png');
-   background-position: -180px 0;
-   position: absolute;
-   right: 0px;
-   top: 7px;
-   width: 30px;
-   height: 30px;
-}
-.b_grid:hover > a:after{
-   background-position: -180px -30px;
-}
-.menu > li:hover a  {
-   color: white;
-   background-color: #485E88;
-}
- li:hover > ul {
-   display: block;
-}
-/* MenuSocial */
-
-.socialnetwork {
-   font-size: 0;
-   text-align: center;
-}
-
-.socialnetwork > li {
-   display: inline-block;
-   font-size: 14px;
-}
-
-.socialnetwork li a {
-   display: block;
-   padding: 2px 20px 13px 49px;
-   position: relative;
-}
-
-li a:before {
-   content: "";
-   width: 30px;
-   height: 30px;
-   background: url('../img/css_sprites.png');
-   transition: all .3s ease;
-   position: absolute;
-   left: 0;
-   top: 0;
-}
-
-.socialnetwork li+li a:before  {
-   background-position: -30px 0;
-}
-
-.socialnetwork li+li+li a:before  {
-   background-position: -60px 0;
-}
-
-.socialnetwork li:hover a:before  { 
-   background-position: 0 -30px;
-}
-
-.socialnetwork li+li:hover a:before  {
-   background-position: -30px -30px;
-}
-
-.socialnetwork li+li+li:hover a:before  {
-   background-position: -60px -30px;
-}
-
-.menu {
-   font-size: 0;
-   text-align: center;
-}
-
-.menu > li {
-   display: inline-block;
-   font-size: 14px;
-   border: 1px solid blue;
-}
-
-.menu > li > a {
-   display: block;
-   padding: 4px 19px 4px 49px;
-   position: relative;
-   text-decoration: none;
-   text-transform: uppercase;
-}
-
-.home > a:before{
-   background-position: -90px 0;
-}
-
-.gallery > a:before {
-   background-position: -120px 0;
-}
-
-.menu > .menu_block > a {
-   display: block;
-   padding: 4px 49px 4px 25px;
-   position: relative;
-   text-decoration: none;
-   text-transform: uppercase;
-}
-
-.menu_block > a::before {
-   content: none;
-}
-
-.menu_block > a:after {
-   content: "";
-   width: 30px;
-   height: 30px;
-   background: url('../img/css_sprites.png');
-   position: absolute;
-   top: 1px;
-   background-position: -150px 0;
-   right: 4px;
-}
-
-.menu_block  {
-   position: relative;
-}
-
-.block {
-   position: absolute;
-   /* display: none; */
-   padding: 10px 0 0;
-   top: 100%;
-   left: 0;
-   width: 123px;
-}
-
-.block li a:before {
-   content: none;
 }
 
 .block > .b_float, .block > .b_grid {
    position: relative;
+   
 }
 
 .b_float > ul {
@@ -826,7 +619,7 @@ li a:before {
    right: 100%;
    bottom: 0;  
    padding: 0 10px 0 0;
-   /* display: none; */
+   display: none;
 }
 
 .b_grid > ul {
@@ -835,16 +628,14 @@ li a:before {
    left: 100%;
    top: 0;
    padding: 0 0 0 10px;
-   /* display: none; */
+   display: none;
 }
 
-.block a {
-   font-size: 10px;
-   padding: 10px 10px 49px 4px;
-}
-
-.menu > li:hover a  {
+ .menu li:hover > a  {
    color: white;
    background-color: #485E88;
 }
 
+ .menu li:hover > ul {
+   display: block;
+}
