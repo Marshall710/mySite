@@ -571,7 +571,7 @@ a {
 
 /**************************************************************************/
 
-.menu {
+/*.menu {
    text-align: center;
    font-size: 0;
    line-height: 24px;
@@ -579,12 +579,10 @@ a {
    z-index: 5;
    position: relative;
 }
-
 .menu > li {
    display: inline-block;
-   border: 1px solid darkblue;
+   /* border: 1px solid darkblue; 
    position: relative;
-   width: 120px;
    font-size: 14px;
 }
 
@@ -594,7 +592,7 @@ a {
    color: black;
    padding: 10px;
    display: block;
-   background-color: aliceblue;
+   /* background-color: aliceblue; 
 }
 
 .block {
@@ -612,6 +610,7 @@ a {
 
 .block > .b_float, .block > .b_grid {
    position: relative;
+   
 }
 
 .b_float > ul {
@@ -635,7 +634,7 @@ a {
  .menu li:hover > a  {
    color: white;
    background-color: #485E88;
- }
+}
 
  .menu li:hover > ul {
    display: block;
