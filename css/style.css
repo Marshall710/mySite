@@ -571,7 +571,8 @@ a {
 
 /**************************************************************************/
 
-/*.menu {
+
+.menu {
    text-align: center;
    font-size: 0;
    line-height: 24px;
@@ -579,9 +580,9 @@ a {
    z-index: 5;
    position: relative;
 }
+
 .menu > li {
    display: inline-block;
-   /* border: 1px solid darkblue; 
    position: relative;
    font-size: 14px;
 }
@@ -592,7 +593,6 @@ a {
    color: black;
    padding: 10px;
    display: block;
-   /* background-color: aliceblue; 
 }
 
 .block {
@@ -601,16 +601,17 @@ a {
    padding: 10px 0 0;
    top: 100%;
    left: 0;
-   width: 120px;
+   width: 100%;
 }
 
 .menu li:last-child ul a {
    font-size: 10px;
+   background-color: aliceblue;
+   padding: 3px 0px 5px 0px;
 }
 
 .block > .b_float, .block > .b_grid {
    position: relative;
-   
 }
 
 .b_float > ul {
@@ -631,11 +632,122 @@ a {
    display: none;
 }
 
- .menu li:hover > a  {
+ .menu li:hover > a, .menu li:last-child ul a:hover {
    color: white;
    background-color: #485E88;
-}
+ }
 
  .menu li:hover > ul {
    display: block;
+}
+/**********************************/
+
+.menu > li:nth-child(-n+2) a::before, 
+.menu > li:last-child > a::after,
+.b_float > a::before, .b_grid > a:after ,
+.socialnetwork li a:before {
+   content: "";
+   background: url('../img/css_sprites.png');
+   position: absolute;
+   top: 0;
+   width: 30px;
+   height: 30px;
+}
+
+.b_float > a::before,
+.menu > li:nth-child(-n+2) a::before {
+   left: 0;
+}
+
+.menu > li:last-child > a::after,
+.b_grid > a:after {
+   right: 0;
+}
+
+.menu > li:nth-child(-n+2) a::before{
+   background-position: -90px 0;
+}
+
+.menu > li:nth-child(2) a::before {
+   background-position: -120px 0;
+}
+
+.menu > li:last-child > a::after {
+   background-position: -150px 0;
+}
+
+.b_float > a:before {
+   background-position: -180px -30px;
+}
+
+.b_grid > a:after {
+   background-position: -180px 0;
+}
+/******************HOVER******************/
+
+.b_float:hover > a:before {
+   background-position: -180px 0;
+}
+
+.b_grid:hover > a:after {
+   background-position: -180px -30px;
+}
+
+.menu > li:last-child:hover > a:after {
+   background-position: -150px -30px;
+}
+
+/******************************************/
+
+.menu > li > a {
+   padding: 4px 27px 4px 45px;
+}
+
+.menu > li:last-child > a {
+   padding: 4px 45px 4px 27px;
+}
+
+/***********SOCIAL NETWORK************/
+
+.socialnetwork {
+   font-size: 0;
+   text-align: center;
+}
+
+.socialnetwork li {
+   display: inline-block;
+   font-size: 14px;
+}
+
+.socialnetwork li a {
+   display: block;
+   padding: 2px 20px 13px 49px;
+   position: relative;
+}
+
+.socialnetwork li a:before {
+   transition: all .3s ease;
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+
+.socialnetwork li+li a:before  {
+   background-position: -30px 0;
+}
+
+.socialnetwork li+li+li a:before  {
+   background-position: -60px 0;
+}
+
+.socialnetwork li:hover a:before  { 
+   background-position: 0 -30px;
+}
+
+.socialnetwork li+li:hover a:before  {
+   background-position: -30px -30px;
+}
+
+.socialnetwork li+li+li:hover a:before  {
+   background-position: -60px -30px;
 }
