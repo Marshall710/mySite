@@ -131,8 +131,6 @@ a {
    outline: 1px solid green;
 }
 
-/***************************************/
-
 .third_one, .twelve {
    display: table-cell;
    width: 600px;
@@ -143,7 +141,6 @@ a {
    outline: 1px solid green;
    width: 300px;
 }
- /**********************************/
 
 .fourth_two {
    width: 800px;
@@ -157,7 +154,6 @@ a {
    width: 400px;
    display: table-cell;
 }
-
 
 .fourth_two, .seventeen {
    display: table-cell;
@@ -197,7 +193,7 @@ a {
  .nine_1 {
    outline: 1px solid green;
    font-size: 30px;
- }
+}
 
 .ten_1, .eleven_1 {
    outline: 1px solid green;
@@ -263,20 +259,20 @@ a {
    outline: 1px solid darkblue;
 } 
 
-.one_f, .two_f, .three_f {
+.one_f, .two_f, .three_f, .fourteen_f, .fourth_one_f {
    width: 400px;
    float: left;
 }
 
-.second_one_f {
+.second_one_f, .fourth_two_f  {
    width: 800px;
 }
 
-.second_two_f{
+.second_two_f, .seventeen_f{
    width: 400px;
 }
 
-.second_one_f, .second_two_f {
+.second_one_f, .second_two_f, .fourth_two_f, .seventeen_f {
    float: left;
 }
 
@@ -287,23 +283,6 @@ a {
 
 .ten_f, .eleven_f {
    width: 300px;
-   float: left;
-}
-
-.fourth_two_f, .seventeen_f {
-   float: left;
-}
-
-.fourth_two_f {
-   width: 800px;
-}
-
-.seventeen_f {
-   width: 400px;
-}
-
-.fourteen_f, .fourth_one_f {
-   width: 400px;
    float: left;
 }
 
@@ -329,20 +308,20 @@ a {
    outline: 1px solid white;
 } 
 
-.one_a, .two_a, .three_a {
+.one_a, .two_a, .three_a, .fourteen_a, .fourth_one_a  {
    width: 400px;
    float: left;
 }
 
-.second_one_a {
+.second_one_a, .fourth_two_a {
    width: 800px;
 }
 
-.second_two_a {
+.second_two_a, .seventeen_a {
    width: 400px;
 }
 
-.second_one_a, .second_two_a {
+.second_one_a, .second_two_a, .fourth_two_a, .seventeen_a {
    float: left;
 }
 
@@ -356,29 +335,10 @@ a {
    float: left;
 }
 
-.fourth_two_a, .seventeen_a {
-   float: left;
-}
-
-.fourth_two_a {
-   width: 800px;
-}
-
-.seventeen_a {
-   width: 400px;
-}
-
-.fourteen_a, .fourth_one_a {
-   width: 400px;
-   float: left;
-}
-
 /**********************************************************************************/
 
 .one_af, .two_af, .three_af, .fourteen_af, .fourth_one_af, .seventeen_af, .second_two_af  {
    flex: 0 1 400px;
-
-   ;
    outline: 1px solid white;
 }
 
@@ -608,7 +568,7 @@ a {
    font-size: 10px;
    background-color: aliceblue;
    color: black;
-   padding: 3px 0px 5px 0px;
+   padding: 3px 0px;
 }
 
 .block > .b_float, .block > .b_grid {
