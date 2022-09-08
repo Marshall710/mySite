@@ -557,11 +557,12 @@ a {
 
 .block {
    position: absolute;
-   display: none;
+   opacity: 0;
    padding: 10px 0 0;
    top: 100%;
    left: 0;
    width: 100%;
+   pointer-events: none;
 }
 
 .menu li:last-child ul a {
@@ -599,7 +600,9 @@ a {
  }
 
  .menu li:hover > ul {
-   display: block;
+   transition: all .5s ease-in;
+   opacity: 100%;
+   pointer-events: all;
 }
 /**********************************/
 
