@@ -557,12 +557,20 @@ a {
 
 .block {
    position: absolute;
-   opacity: 0;
+   /* opacity: 0; */
    padding: 10px 0 0;
    top: 100%;
    left: 0;
    width: 100%;
    pointer-events: none;
+   height: 0;
+   overflow: hidden;
+   transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover > ul {
+   height: 160px;
+   pointer-events: all;
 }
 
 .menu li:last-child ul a {
@@ -582,7 +590,10 @@ a {
    right: 100%;
    bottom: 0;  
    padding: 0 10px 0 0;
-   display: none;
+   /* display: none; */
+   opacity: 0;
+   transition: all 1s ease-in-out; 
+   /* overflow: visible; */
 }
 
 .b_grid > ul {
@@ -591,7 +602,10 @@ a {
    left: 100%;
    top: 0;
    padding: 0 0 0 10px;
-   display: none;
+   opacity: 0;
+   /* display: none; */
+   transition: all 1s ease-in-out;
+   /* overflow: visible; */
 }
 
  .menu li:hover > a, .menu li:last-child ul a:hover {
@@ -599,11 +613,15 @@ a {
    background-color: #485E88;
  }
 
- .menu li:hover > ul {
-   transition: all .5s ease-in;
+.block .b_float:hover li {
    opacity: 100%;
-   pointer-events: all;
+   /* overflow: visible; */
 }
+
+.block ul:hover {
+   overflow: visible;
+}
+
 /**********************************/
 
 .menu > li:nth-child(-n+2) a:before, 
