@@ -603,46 +603,41 @@ a {
 }
 /**********************************/
 
-.menu > li:nth-child(-n+2) a::before, 
-.menu > li:last-child > a::after,
-.b_float > a::before, .b_grid > a:after ,
+.menu > li:nth-child(-n+2) a:before, 
+.menu > li:last-child > a:before,
+.b_float > a:before, .b_grid > a:before,
 .socialnetwork li a:before {
    content: "";
    background: url('../img/css_sprites.png');
    position: absolute;
    top: 0;
+   left: 0;
    width: 30px;
    height: 30px;
 }
 
-.b_float > a::before,
-.menu > li:nth-child(-n+2) a::before {
-   left: 0;
-}
-
-.menu > li:last-child > a::after,
-.b_grid > a:after {
-   right: 0;
-}
-
-.menu > li:nth-child(-n+2) a::before{
+.menu > li:nth-child(-n+2) a:before{
    background-position: -90px 0;
 }
 
-.menu > li:nth-child(2) a::before {
+.menu > li:nth-child(2) a:before {
    background-position: -120px 0;
 }
 
-.menu > li:last-child > a::after {
+.menu > li:last-child > a:before {
    background-position: -150px 0;
+   left: auto;
+   right: 0;
 }
 
 .b_float > a:before {
    background-position: -180px -30px;
 }
 
-.b_grid > a:after {
+.b_grid > a:before {
    background-position: -180px 0;
+   left: auto;
+   right: 0;
 }
 /******************HOVER******************/
 
@@ -650,11 +645,11 @@ a {
    background-position: -180px 0;
 }
 
-.b_grid:hover > a:after {
+.b_grid:hover > a:before {
    background-position: -180px -30px;
 }
 
-.menu > li:last-child:hover > a:after {
+.menu > li:last-child:hover > a:before {
    background-position: -150px -30px;
 }
 
