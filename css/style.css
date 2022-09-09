@@ -531,7 +531,6 @@ a {
 
 /**************************************************************************/
 
-
 .menu {
    text-align: center;
    font-size: 0;
@@ -551,26 +550,24 @@ a {
    text-decoration: none;
    text-transform: uppercase;
    color: black;
-   /* padding: 10px; */
    display: block;
 }
 
 .block {
    position: absolute;
-   /* opacity: 0; */
    padding: 10px 0 0;
-   top: 100%;
+   top: 0;
    left: 0;
    width: 100%;
    pointer-events: none;
-   height: 0;
-   overflow: hidden;
-   transition: all 0.5s ease-in-out;
+   transition: all .5s linear;
+   opacity: 0;
 }
 
-.menu li:hover > ul {
-   height: 160px;
+.menu > li:hover .block {
    pointer-events: all;
+   top: 100%;
+   opacity: 100%;
 }
 
 .menu li:last-child ul a {
@@ -590,10 +587,9 @@ a {
    right: 100%;
    bottom: 0;  
    padding: 0 10px 0 0;
-   /* display: none; */
-   opacity: 0;
-   transition: all 1s ease-in-out; 
-   /* overflow: visible; */
+   transition: all .3s steps(2, end);
+   overflow: hidden;
+   height: 0;
 }
 
 .b_grid > ul {
@@ -602,24 +598,18 @@ a {
    left: 100%;
    top: 0;
    padding: 0 0 0 10px;
-   opacity: 0;
-   /* display: none; */
-   transition: all 1s ease-in-out;
-   /* overflow: visible; */
+   transition: all .3s steps(2, end);
+   overflow: hidden;
+   height: 0;
 }
 
- .menu li:hover > a, .menu li:last-child ul a:hover {
+.menu li:hover > a, .menu li:last-child ul a:hover {
    color: white;
    background-color: #485E88;
- }
-
-.block .b_float:hover li {
-   opacity: 100%;
-   /* overflow: visible; */
 }
 
-.block ul:hover {
-   overflow: visible;
+.b_float:hover > ul, .b_grid:hover > ul {
+   height: 60px;
 }
 
 /**********************************/
