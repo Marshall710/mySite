@@ -704,8 +704,16 @@ a {
    background-position: -30px 0;
 }
 
-.socialnetwork li+li+li a:before, .networks li+li+li a:before  {
+.socialnetwork li+li+li a:before, .networks li+li+li a:before {
    background-position: -60px 0;
+}
+
+.networks li+li+li+li a:before {
+   background-position: 0 -60px;
+}
+
+.networks li+li+li+li:hover a:before {
+   background-position: 0 -90px;
 }
 
 .socialnetwork li:hover a:before, .networks li:hover a:before { 
@@ -724,17 +732,14 @@ a {
 
 .right_bar { 
    position: absolute;
-   top: 111px;
+   top: 50%;
    right: 0;
-   font-size: 0;
-   width: 300px;
+   width: 20%;
    height: 150px;
    background: pink;
-   /* pointer-events: none; */
 }
 
 .right_bar li {
-   display: inline-block;
    font-size: 30px;
 }
 
@@ -752,30 +757,39 @@ a {
 }
 
 .networks { 
-   transform: rotate(90deg);
+   transform: rotate(45deg) /*translate(130px, 0px)*/;
    position: relative;
-   font-size: 0;
-   text-align: center;
 } 
 
 .networks li {
-   display: inline-block;
-   font-size: 14px;
-   position: relative;
+   border: 3px solid #485E88;
+   width: 30px;
 }
 
 .networks li a {
    display: block;
-   padding: 2px 20px 13px 49px;
+   padding: 30px 0 0 30px;
    position: relative;
-   
 }
 
 .networks li a:before {
    transition: all .3s ease;
    position: absolute;
-   left: 0;
-   top: 0;
-   border: 1px solid #485E88;
-   margin: 0 10px 10px 0;
+   transform: rotate(45deg);
+}
+
+.networks li:last-child {
+   transform: translate(116px,14px);
+}
+
+.networks li+li+li {
+   transform: translate(68px,51px);
+}
+
+.networks li+li {
+   transform: translate(68px,38px);
+}
+
+.networks li:first-child {
+   transform: translate(116px,73px);
 }
