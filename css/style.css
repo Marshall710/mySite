@@ -57,6 +57,7 @@ html {
     text-align: justify; 
     line-height: 24px; 
     border: 5px solid black;
+    position: relative;
 }    
 
 h1 {
@@ -616,7 +617,7 @@ a {
 .menu > li:nth-child(-n+2) a:before, 
 .menu > li:last-child > a:before,
 .b_float > a:before, .b_grid > a:before,
-.socialnetwork li a:before {
+.socialnetwork li a:before, .networks li a:before {
    content: "";
    background: url('../img/css_sprites.png');
    position: absolute;
@@ -685,7 +686,7 @@ a {
    font-size: 14px;
 }
 
-.socialnetwork li a {
+.socialnetwork li a{
    display: block;
    padding: 2px 20px 13px 49px;
    position: relative;
@@ -698,22 +699,82 @@ a {
    top: 0;
 }
 
-.socialnetwork li+li a:before  {
+.socialnetwork li+li a:before, .networks li+li a:before  {
    background-position: -30px 0;
 }
 
-.socialnetwork li+li+li a:before  {
+.socialnetwork li+li+li a:before, .networks li+li+li a:before  {
    background-position: -60px 0;
 }
 
-.socialnetwork li:hover a:before  { 
+.socialnetwork li:hover a:before, .networks li:hover a:before { 
    background-position: 0 -30px;
 }
 
-.socialnetwork li+li:hover a:before  {
+.socialnetwork li+li:hover a:before, .networks li+li:hover a:before  {
    background-position: -30px -30px;
 }
 
-.socialnetwork li+li+li:hover a:before  {
+.socialnetwork li+li+li:hover a:before, .networks li+li+li:hover a:before  {
    background-position: -60px -30px;
+}
+
+/************************************/
+
+.right_bar { 
+   position: absolute;
+   top: 111px;
+   right: 0;
+   font-size: 0;
+   width: 300px;
+   height: 150px;
+   background: pink;
+   /* pointer-events: none; */
+}
+
+.right_bar li {
+   display: inline-block;
+   font-size: 30px;
+}
+
+.right_bar > li:first-child {
+   border: 1px solid #000000;
+   height: 22%;
+   width: 50%;
+   transform: rotate(-90deg) translate(-58px, -60px);
+   text-align: center;
+}
+.right_bar > li > a {
+   text-decoration: none;
+   display: block;
+   color: blue;
+}
+
+.networks { 
+   transform: rotate(90deg);
+   position: relative;
+   font-size: 0;
+   text-align: center;
+} 
+
+.networks li {
+   display: inline-block;
+   font-size: 14px;
+   position: relative;
+}
+
+.networks li a {
+   display: block;
+   padding: 2px 20px 13px 49px;
+   position: relative;
+   
+}
+
+.networks li a:before {
+   transition: all .3s ease;
+   position: absolute;
+   left: 0;
+   top: 0;
+   border: 1px solid #485E88;
+   margin: 0 10px 10px 0;
 }
