@@ -802,17 +802,21 @@ a {
 }
 
 .networks li:last-child {
+   overflow: hidden;
    transform: translate(123px,-44px) rotate(45deg);
 }
 
 .networks li+li+li {
+   overflow: hidden;
    transform: translate(95px, 23px) rotate(45deg);
 }
 
 .networks li+li {
+   overflow: hidden;
    transform: translate(64px,30px) rotate(45deg);
 }
 
 .networks li:first-child {
+   overflow: hidden;
    transform: translate(92px,35px) rotate(45deg);
 }
