@@ -732,34 +732,66 @@ a {
 
 .right_bar { 
    position: absolute;
-   top: 50%;
-   right: 0;
-   width: 20%;
-   height: 150px;
-   background: pink;
+   width: 225px;
+   height: 24px;
+   top: 274px;
+   right: -100px;
+   transition: all 2s ease;
+   transform: rotate(-90deg);
 }
 
 .right_bar li {
    font-size: 30px;
 }
 
-.right_bar > li:first-child {
-   border: 1px solid #000000;
-   height: 22%;
-   width: 50%;
-   transform: rotate(-90deg) translate(-58px, -60px);
-   text-align: center;
+@keyframes shake {
+   from { 
+      margin-top: 50px; 
+    }
+    
+    50%  {
+      margin-top: 150px !important; 
+    }
+    
+    to   { 
+      margin-top: 100px; 
+    }
 }
-.right_bar > li > a {
-   text-decoration: none;
+
+/* .right_bar p {
+   transition: all 1s ease-in;
+   transform: rotate(-90deg);
+   animation: shake 1.75s linear 2.5s infinite alternate none;
+} */
+
+/* .right_bar > li:first-child:hover {
+   animation: none;
+} */
+
+.right_bar p {
    display: block;
+   text-align: center;
+   font-size: 40px;
    color: blue;
 }
 
-.networks { 
-   transform: rotate(45deg) /*translate(130px, 0px)*/;
-   position: relative;
-} 
+.networks {
+   width: 100%;
+   height: 0; 
+   background: pink;
+   transform: scale(0);
+   overflow: hidden;
+   transition: all 2s ease;
+}
+
+.right_bar:hover {
+   right: calc(230px - 100px);
+}
+
+ .right_bar:hover .networks {
+   height: 206px;
+   transform: scale(1);
+}
 
 .networks li {
    border: 3px solid #485E88;
@@ -769,27 +801,25 @@ a {
 .networks li a {
    display: block;
    padding: 30px 0 0 30px;
-   position: relative;
 }
 
 .networks li a:before {
    transition: all .3s ease;
-   position: absolute;
    transform: rotate(45deg);
 }
 
 .networks li:last-child {
-   transform: translate(116px,14px);
+   transform: translate(126px,-13px) rotate(45deg);
 }
 
 .networks li+li+li {
-   transform: translate(68px,51px);
+   transform: translate(97px,53px) rotate(45deg);
 }
 
 .networks li+li {
-   transform: translate(68px,38px);
+   transform: translate(66px,59px) rotate(45deg);
 }
 
 .networks li:first-child {
-   transform: translate(116px,73px);
+   transform: translate(97px,65px) rotate(45deg);
 }
