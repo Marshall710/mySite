@@ -796,17 +796,21 @@ a {
 }
 
 .networks li:last-child {
+   overflow: hidden;
   transform: translate(126px, -13px) rotate(45deg);
 }
 
 .networks li+li+li {
+   overflow: hidden;
   transform: translate(97px, 53px) rotate(45deg);
 }
 
 .networks li+li {
+   overflow: hidden;
   transform: translate(66px, 59px) rotate(45deg);
 }
 
 .networks li:first-child {
+   overflow: hidden;
   transform: translate(97px, 65px) rotate(45deg);
 }
