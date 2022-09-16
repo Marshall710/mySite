@@ -731,7 +731,7 @@ a {
 /************************************/
 
 .right_bar { 
-   position: absolute;
+   position: fixed;
    width: 0;
    height: 230px;
    top: calc(50% - 115px);
