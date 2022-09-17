@@ -500,6 +500,7 @@ a {
    height: 50px;
    position: absolute;
    top: 50%;
+   left: 0;
    margin-top: -25px;
    line-height: 50px;
    font-size: 30px;
