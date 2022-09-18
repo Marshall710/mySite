@@ -811,3 +811,33 @@ a {
 .networks li:first-child {
   transform: translate(97px, 65px) rotate(45deg);
 }
+/******************************************************************/
+
+.clincher {
+   margin: 0 auto;
+   margin-top: 100px;
+   margin-bottom: 50px;
+   width: 300px;
+   height: 120px;
+   border: 10px solid grey;
+   position: relative;
+}
+
+.clincher::after {
+   content: "";
+   height: 300px;
+   width: 150px;
+   position: absolute;
+   border-radius: 50% 0 0 50% / 50% 0 0 50%;
+   border: 10px solid grey;
+   left: -57%;
+   bottom: -100px;
+}
+
+.clincher::before {
+   content: "";
+   height: 120px;
+   width: 8px;
+   background: linear-gradient(45deg, grey 50%, wheat 50%);
+   position: absolute;
+}
