@@ -824,12 +824,22 @@ a {
    position: relative;
 }
 
+.clincher_cirkul {
+   left: 0;
+   height: 55px;
+   width: 150px;
+   border-color: black;
+   box-sizing: border-box;
+   border-bottom: ;
+}
+
 .clincher::after {
    content: "";
    height: 300px;
    width: 150px;
    position: absolute;
-   border-radius: 50% 0 0 50% / 50% 0 0 50%;
+   border-left: solid ;
+   border-radius: 100% 0 0 100% / 60% 0 0 60%;
    border: 10px solid grey;
    left: -57%;
    bottom: -100px;
@@ -841,4 +851,49 @@ a {
    width: 8px;
    background: linear-gradient(45deg, grey 50%, wheat 50%);
    position: absolute;
+}
+
+/* .nut {
+   margin: 0 auto;
+   margin-top: 100px;
+   margin-bottom: 50px;
+   position: relative;
+   width: 300px;
+   height: 250px;
+}
+
+.nut:before {
+   width: 100%;
+   height: 50%;
+   content: "";
+   position: absolute;
+   border-top: 8px solid gray;
+   border-left: 8px solid grey,;
+}
+ */
+
+ #hexagon {
+	width: 100px;
+	height: 70px;
+   left: 100px;
+	background: radial-gradient(circle, transparent 25px, grey 0);
+	position: relative;
+   transform: rotate(90deg);
+}
+
+#hexagon:before, #hexagon:after {
+	content: "";
+	position: absolute;
+	top: -25px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid grey;
+}
+
+#hexagon:after {
+   top: 70px;
+   transform: rotate(180deg);
 }
