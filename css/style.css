@@ -814,74 +814,69 @@ a {
 }
 /******************************************************************/
 
-.clincher {
+.first_graf, .nut {
+   width: 1200px;
+   display: flex;
+   position: relative;
    margin: 0 auto;
-   margin-top: 100px;
-   margin-bottom: 50px;
+   padding: 200px 0 ;
+   justify-content: center;
+   align-items: center;
+}
+
+.clincher {
    width: 300px;
    height: 120px;
-   border: 10px solid grey;
-   position: relative;
+   border: 8px solid grey;
+   position: absolute;
+   bottom: 33%;
+   right: 155px;
+   background: repeating-linear-gradient(45deg, transparent, transparent 20px, gray 20px, grey 40px);
 }
 
 .clincher_cirkul {
-   left: 0;
-   height: 55px;
+   height: 50px;
+   width: 50px;
+   border-top: 8px solid grey;
+   border-right: 8px solid grey;
+   border-bottom: 8px solid grey;
+   position: absolute;
+}
+
+.clincher_cirkul::after {
+   content: "";
+   height: 150px;
    width: 150px;
-   border-color: black;
-   box-sizing: border-box;
-   border-bottom: ;
+   position: absolute;
+   border-left: 8px solid grey;
+   border-top: 8px solid grey;
+   border-right: 8px solid grey;
+   border-top-left-radius: 100%;
+   top: -158px;
 }
 
-.clincher::after {
+.clincher_cirkul::before {
    content: "";
-   height: 300px;
+   height: 150px;
    width: 150px;
    position: absolute;
-   border-left: solid ;
-   border-radius: 100% 0 0 100% / 60% 0 0 60%;
-   border: 10px solid grey;
-   left: -57%;
-   bottom: -100px;
+   border-left: 8px solid grey;
+   border-bottom: 8px solid grey;
+   border-bottom-left-radius: 100%;
+   border-right: 8px solid grey;
+   top: 51px;
 }
-
-.clincher::before {
-   content: "";
-   height: 120px;
-   width: 8px;
-   background: linear-gradient(45deg, grey 50%, wheat 50%);
-   position: absolute;
-}
-
-/* .nut {
-   margin: 0 auto;
-   margin-top: 100px;
-   margin-bottom: 50px;
-   position: relative;
-   width: 300px;
-   height: 250px;
-}
-
-.nut:before {
-   width: 100%;
-   height: 50%;
-   content: "";
-   position: absolute;
-   border-top: 8px solid gray;
-   border-left: 8px solid grey,;
-}
- */
-
- #hexagon {
+/***********************************GEAR***************************/
+.hexagon {
 	width: 100px;
 	height: 70px;
-   left: 100px;
+   left: 50%;
 	background: radial-gradient(circle, transparent 25px, grey 0);
 	position: relative;
    transform: rotate(90deg);
 }
 
-#hexagon:before, #hexagon:after {
+.hexagon:before, .hexagon:after {
 	content: "";
 	position: absolute;
 	top: -25px; 
@@ -893,7 +888,38 @@ a {
 	border-bottom: 25px solid grey;
 }
 
-#hexagon:after {
+.hexagon:after {
    top: 70px;
    transform: rotate(180deg);
+}
+
+/*************************************************/
+
+.nut {
+   position: relative;
+   background: #6ba04d;
+   height: 400px;
+}
+
+
+.nut_1 {
+   width: 400px;
+   height: 80px;
+   position: absolute;
+   border-bottom: 10px solid gray;
+   border-top: 10px solid gray;
+   border-right: 10px solid gray;
+   border-radius: 0 17% 17% 0 / 0 50% 50% 0;
+}
+
+.nut_1::before {
+   content: "";
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   left: -125px;
+   bottom: 100%;
+   border-radius: 40%;
+   box-shadow: 30px 0 0 0 grey;
+   transform: rotate(-19deg);
 }
