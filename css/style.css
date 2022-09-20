@@ -814,7 +814,7 @@ a {
 }
 /******************************************************************/
 
-.first_graf, .nut {
+.first_graf, .gear, .nut, .ship {
    width: 1200px;
    display: flex;
    position: relative;
@@ -822,6 +822,10 @@ a {
    padding: 200px 0 ;
    justify-content: center;
    align-items: center;
+}
+
+.first_graf {
+   background: #6ae0ce;
 }
 
 .clincher {
@@ -867,13 +871,15 @@ a {
    top: 51px;
 }
 /***********************************GEAR***************************/
+.gear {
+   background: #e071b6;
+}
+
 .hexagon {
 	width: 120px;
 	height: 180px;
-   left: 50%;
 	background: radial-gradient(circle, transparent 55px, grey 0);
 	position: relative;
-   margin-bottom: 200px;
 }
 
 .hexagon:before, .hexagon:after {
@@ -895,11 +901,8 @@ a {
 /*************************************************/
 
 .nut {
-   position: relative;
    background: #6ba04d;
-   height: 400px;
 }
-
 
 .nut_1 {
    width: 400px;
@@ -909,16 +912,49 @@ a {
    border-top: 10px solid gray;
    border-right: 10px solid gray;
    border-radius: 0 17% 17% 0 / 0 50% 50% 0;
+   background: radial-gradient(circle at right, transparent 55px, grey 0);
 }
 
 .nut_1::before {
    content: "";
    position: absolute;
-   width: 200px;
+   width: 100px;
    height: 200px;
    left: -125px;
    bottom: 100%;
-   border-radius: 40%;
-   box-shadow: 30px 0 0 0 grey;
-   transform: rotate(-19deg);
+   /* border-right: 10px solid gray;
+   border-top-right-radius: 50%;
+   border-top: 10px solid gray;
+   border-left: 10px solid gray; */
+   /* border-bottom: 10px solid gray; */
+   /* border-radius: 0% 50% 0% 0 / 0% 50% 0% 0% ; */
+   /* background: radial-gradient(circle at 95% 50%, transparent 3%,gray 3%); */
+}
+
+/***********************ship*******************************/
+
+.ship {
+   background: #b09e52;
+}
+
+.ship_1 {
+   position: absolute;
+   width: 300px;
+   height: 50px;
+   border-top: 10px solid blue;
+   border-bottom: 10px solid blue;
+   background: linear-gradient();
+}
+
+.ship_1::before {
+   content: "";
+   position: absolute;
+   width: 75px;
+   height: 75px;
+   left: -100px;
+   top: -50px;
+   border-top: 10px solid blue;
+   border-right: 10px solid blue;
+   border-bottom: 10px solid blue;
+   transform: rotate(-135deg);
 }
