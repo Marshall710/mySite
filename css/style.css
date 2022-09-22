@@ -920,7 +920,6 @@ a {
    height: 160px;
    right: 95%;
    top: -50%;
-   /* background-image: radial-gradient(farthest-corner circle at 5% 50%, transparent 50px, yellow 30%); */
    background-image: linear-gradient(to bottom, gray 25%, transparent 25%),
       linear-gradient(to top, gray 25%, transparent 25%),
       radial-gradient(ellipse at left, transparent 55%, gray 50%);
@@ -929,12 +928,12 @@ a {
 
 /***********************ship*******************************/
 
-/* .ship {
+ .ship {
    background: #b09e52;
 }
 
 .ship_1 {
-   position: absolute;
+   position: relative;
    width: 300px;
    height: 60px;
    background: blue;
@@ -948,10 +947,9 @@ a {
 	border-top: 50px solid transparent;
 	border-right: 60px solid blue;
 	border-bottom: 50px solid transparent;
-   /* transform: rotate(-135deg); */
+}
 
-
-/*.ship_1::after {
+.ship_1::after {
    content: "";
    position: absolute;
    border-bottom: 40px solid blue;
@@ -963,17 +961,8 @@ a {
    bottom: 47px;
 }
 
-/* .ship_1 {
-   position: absolute;
-   width: 500px;
-   height: 80px;
-   background: linear-gradient(to bottom, transparent 50%, blue 50%),
-      linear-gradient(to right, transparent 10%, blue 10%),
-      linear-gradient(30deg, transparent 10%, blue 10%);
-} */
-
-/* .ship_2 {
-   height: 200px;
+.ship_2 {
+   height: 232px;
    position: absolute;
    border-left: 10px solid  #6ae0ce;
    bottom: 55%
@@ -982,19 +971,33 @@ a {
 .ship_2::before {
    content: "";
    position: absolute;
-   height: 180px;
-   width: 180px;
+   height: 172px;
+   width: 172px;
    border-radius: 50%;
    background-image: radial-gradient(circle at right, transparent 58%,  yellow 30%);
-   left: -112px;
+   left: -103px;
+   top: 27%;
 }
 
 .ship_2::after {
    content: "";
    position: absolute;
-   height: 180px;
-   width: 180px;
-   border-radius: 1%;
-   background-image: linear-gradient(top to right, transparent 58%,  yellow 0%);
-   bottom: -50%;
-} */
+   height: 130px;
+   transform: rotate(45deg);
+   width: 130px;
+   border-radius: 13% 0% 13% 0% / 13% 0% 13% 0%;
+   background-image: radial-gradient(10em at bottom left, transparent 119px,  red 58px);
+   bottom: 8%;
+   left: -58px;
+}
+
+.ship_3{
+   position: absolute;
+   height: 0;
+   width: 38px;
+   border-top: 23px solid blue;
+   border-bottom: 23px solid blue;
+   border-right: 13px solid transparent;
+   top: 57px;
+   right: 46%;
+}
