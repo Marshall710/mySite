@@ -1002,3 +1002,61 @@ a {
    top: 61px;
    right: 45%;
 }
+/*/////////////////////////FORM/////////////////////*/
+
+.form {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   margin: 0 auto;
+}
+
+textarea {
+   width: 548px;
+   height: 52px;
+   min-width: 100px;
+   max-width: 900px;
+   background: linear-gradient(#e66465, #9198e5);
+   font-size: 30px;
+   font-family: cursive;;
+   font-weight: 800;
+   text-align: center;
+   border-radius: 2% / 20%;
+   box-shadow: 0px 5px 15px;
+   transition: all 0.5s ease-out;
+   border: 5px solid #485E88;
+   
+}
+
+textarea:hover {
+   background: linear-gradient(white, yellow);
+}
+
+.box_select {
+   position: absolute;
+   margin-bottom: 100px;
+}
+
+.box_select select {
+   /* position: relative; */
+   width: 200px;
+   height: 50px;
+   display: block;
+   font-size: 20px;
+   font-weight: 600;
+   left: 182px;
+   transform: translate(-60%, -50%);
+   background-color: DodgerBlue;
+}
+
+select::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 20%;
+   height: 100%;
+   border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+}
