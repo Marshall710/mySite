@@ -965,7 +965,8 @@ a {
    height: 232px;
    position: absolute;
    border-left: 10px solid  #6ae0ce;
-   bottom: 55%
+   bottom: 55%;
+   left: 50%;   
 }
 
 .ship_2::before {
@@ -998,6 +999,6 @@ a {
    border-top: 23px solid blue;
    border-bottom: 23px solid blue;
    border-right: 13px solid transparent;
-   top: 57px;
-   right: 46%;
+   top: 61px;
+   right: 45%;
 }
