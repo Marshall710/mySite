@@ -1005,38 +1005,37 @@ a {
 }
 /*/////////////////////////FORM/////////////////////*/
 
-.form {
+.mainform {
    position: relative;
    display: flex;
+   margin: 0 auto;
    justify-content: center;
-   margin: 50px auto;
 }
 
 
 textarea {
-   width: 150px;
-   height: 24px;
-   background: linear-gradient(#e66465, #9198e5);
-   font-size: 14px;
-   font-family: cursive;;
+   width: 200px;
+   height: 40px;
+   min-width: 200px;
+   min-height: 38px;
+   background: #033157;
+   font-size: 20px;
+   font-family: cursive;
    font-weight: 800;
    text-align: center;
+   line-height: 38px;
    border-radius: 2% / 20%;
-   box-shadow: 0px 5px 15px;
-   transition: all 0.5s ease-out;
-   border: 5px solid #485E88;
-   
 }
 
 textarea:hover {
-   background: linear-gradient(white, yellow);
+   background: white;
 }
 
 .box_select {
    position: relative;
-   width: 150px;
-   height: 24px;
-   line-height: 1.5;
+   width: 206px;
+   height: 46px;
+   line-height: 3;
    background: #033157;
    display: flex;
    overflow: hidden;
@@ -1053,7 +1052,7 @@ select {
    outline: none;
    appearance: none;
    box-shadow: none;
-   font-size: 15px;
+   font-size: 20px;
 }
 
 
@@ -1063,7 +1062,7 @@ select {
    position: absolute;
    top: 0;
    right: 0;
-   padding: 0 10px;
+   padding: 0 14px;
    pointer-events: none;
    background: #021525;
    cursor: pointer;
@@ -1081,15 +1080,16 @@ select {
    align-content: stretch;
    justify-content: space-between;
    align-items: center;
-   width: 150px;
+   width: 206px;
    height: 24px;
-   margin-top: 50px;
 }
 
-.switch_container input {
-   opacity: 0;
-   width: 0;
-   height: 0;
+label {
+   margin-top: 7px;
+}
+
+label > p {
+   font-size: 20px;
 }
 
 .slider {
@@ -1100,10 +1100,9 @@ select {
    top: 0;
    right: 0;
    background-color: #033157;
-   -webkit-transition: .4s;
+   /* -webkit-transition: .4s; */
    transition: .4s;
    border-radius: 34px;
-   /* padding: 5px; */
  }
 
  .slider:before {
@@ -1114,7 +1113,7 @@ select {
    left: 2px;
    bottom: 2px;
    background-color: white;
-   -webkit-transition: .4s;
+   /* -webkit-transition: .4s; */
    transition: .4s;
    border-radius: 50%;
  }
@@ -1124,7 +1123,20 @@ select {
  }
  
  input:checked + .slider:before {
-   -webkit-transform: translateX(26px);
-   -ms-transform: translateX(26px);
+   /* -webkit-transform: translateX(26px); */
+   /* -ms-transform: translateX(26px); */
    transform: translateX(26px);
  }
+
+ input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+   background: #021525;
+}
+ 
+ input[type="number"]::-webkit-outer-spin-button,
+ input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+
