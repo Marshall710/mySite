@@ -1013,21 +1013,18 @@ a {
 }
 
 
-textarea {
+#Name {
    width: 200px;
    height: 40px;
-   min-width: 200px;
-   min-height: 38px;
    background: #033157;
    font-size: 20px;
    font-family: cursive;
    font-weight: 800;
-   text-align: center;
-   line-height: 38px;
    border-radius: 2% / 20%;
+   margin-bottom: 5px;
 }
 
-textarea:hover {
+#Name:hover {
    background: white;
 }
 
@@ -1035,7 +1032,7 @@ textarea:hover {
    position: relative;
    width: 206px;
    height: 46px;
-   line-height: 3;
+   line-height: 2;
    background: #033157;
    display: flex;
    overflow: hidden;
@@ -1067,6 +1064,7 @@ select {
    background: #021525;
    cursor: pointer;
    transition: .25s all ease-in;
+   font-size: 23px;
 }
 
 .box_select:hover::after {
@@ -1084,7 +1082,7 @@ select {
    height: 24px;
 }
 
-label {
+label, .number {
    margin-top: 7px;
 }
 
@@ -1100,7 +1098,6 @@ label > p {
    top: 0;
    right: 0;
    background-color: #033157;
-   /* -webkit-transition: .4s; */
    transition: .4s;
    border-radius: 34px;
  }
@@ -1113,7 +1110,6 @@ label > p {
    left: 2px;
    bottom: 2px;
    background-color: white;
-   /* -webkit-transition: .4s; */
    transition: .4s;
    border-radius: 50%;
  }
@@ -1123,16 +1119,16 @@ label > p {
  }
  
  input:checked + .slider:before {
-   /* -webkit-transform: translateX(26px); */
-   /* -ms-transform: translateX(26px); */
    transform: translateX(26px);
  }
-
- input[type="number"] {
+/* 
+  input[type="number"] {
 	-moz-appearance: textfield;
 	-webkit-appearance: textfield;
 	appearance: textfield;
-   background: #021525;
+    /* background: #021525;  
+   width: 200px;
+   height: 40px;
 }
  
  input[type="number"]::-webkit-outer-spin-button,
@@ -1140,3 +1136,20 @@ label > p {
 	display: none;
 }
 
+#ageUser{
+   position: relative;
+   width: 206px;
+   height: 46px;
+   line-height: 2;
+   background: #033157;
+}
+
+#ageUser:after {
+   content: "\e145";
+   font-family: 'Material Symbols Outlined';
+   position: absolute;
+   pointer-events: none;
+   background: #021525;
+   cursor: pointer;
+   font-size: 23px;
+ } */

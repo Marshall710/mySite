@@ -5,6 +5,7 @@
 		<title>Моє хобі</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	</head>
 	<body>
 		<div class="mainContent">
@@ -58,21 +59,21 @@
 			</ul>
 			<div class="mainform">
 				<form action="#">
-					<textarea name="user name" placeholder="Nickname"></textarea>
+					<input id="Name" name="User_Name" placeholder="Nickname"/>
 					<div class="box_select">
-						<select required>
+						<select name="Games" required>
 							<option selected>Dota 2</option>
 							<option>GTA 5</option>
 							<option>FIFA</option>
 							<option>CS:GO</option>
 						</select>
 					</div>
-					<div class="number">
-						<input name="time" type="number">
-					</div>
+					<!-- <div class="number">
+						<input id="ageUser" name="Age" type="number">
+					</div> -->
 					<label class="switch_container">
 						<p>Start Game</p>
-						<input type="checkbox">
+						<input name="Start_Game" type="checkbox">
 						<span class="slider"></span>
 					</label>
 				</form>	
