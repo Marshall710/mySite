@@ -1019,13 +1019,15 @@ a {
    background: #033157;
    font-size: 20px;
    font-family: cursive;
-   font-weight: 800;
+   font-weight: 600;
    border-radius: 2% / 20%;
    margin-bottom: 5px;
+   color: white;
+   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #Name:hover {
-   background: white;
+   background: rgb(46, 12, 124);
 }
 
 .box_select {
