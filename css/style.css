@@ -41,29 +41,31 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/*google*/
 @import  url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+/*fontsquirrel*/
 @font-face {
-   font-family: 'JosefinSansVariableFont_wght';
-   src: url('../fonts/JosefinSansVariableFont_wght.eot');
-   src: url('../fonts/JosefinSansVariableFont_wght.eot') format('embedded-opentype'),
-        url('../fonts/JosefinSansVariableFont_wght.woff2') format('woff2'),
-        url('../fonts/JosefinSansVariableFont_wght.woff') format('woff'),
-        url('../fonts/JosefinSansVariableFont_wght.ttf') format('truetype'),
-}
-
-
-@font-face {
-   font-family: 'oswaldregular';
-   src: url('../fonts/oswald-variablefont_wght-webfont.eot');
-   src: url('../fonts/oswald-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/oswald-variablefont_wght-webfont.woff2') format('woff2'),
-        url('../fonts/oswald-variablefont_wght-webfont.woff') format('woff'),
-        url('../fonts/oswald-variablefont_wght-webfont.ttf') format('truetype');
+   font-family: 'montserratthin';
+   src: url('../fonts/montserrat-variablefont_wght-webfont.eot');
+   src: url('../fonts/montserrat-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat-variablefont_wght-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat-variablefont_wght-webfont.woff') format('woff'),
+        url('../fonts/montserrat-variablefont_wght-webfont.ttf') format('truetype');
    font-weight: normal;
    font-style: normal;
+}
 
+/*everythingfonts*/
+
+@font-face {
+   font-family: 'MontserratVariableFont_wght';
+   src: url('../fonts/MontserratVariableFont_wght.eot');
+   src: url('../fonts/MontserratVariableFont_wght.eot') format('embedded-opentype'),
+        url('../fonts/MontserratVariableFont_wght.woff2') format('woff2'),
+        url('../fonts/MontserratVariableFont_wght.woff') format('woff'),
+        url('../fonts/MontserratVariableFont_wght.ttf') format('truetype'),
+        url('../fonts/MontserratVariableFont_wght.svg#MontserratVariableFont_wght') format('svg');
 }
 
 /*************************************************************************************/
@@ -593,12 +595,6 @@ a {
    transition: all .5s linear;
 }
 
-
-.block > .b_float a, .block > .b_grid a {
-   font-family: 'oswaldregular';
-   background: #021525;
-}
-
 .menu > li:hover .block {
    pointer-events: all;
    top: 100%;
@@ -610,7 +606,10 @@ a {
    background-color: aliceblue;
    color: black;
    padding: 3px 0px;
-   font-family: 'oswaldregular';
+}
+
+ul > a {
+   font-family: 'montserratthin';
 }
 
 .block > .b_float, .block > .b_grid {
@@ -639,7 +638,9 @@ a {
    transition: height .3s steps(2, end);
 }
 
-
+.b_float ul li a, .b_grid ul li a {
+   font-family: 'MontserratVariableFont_wght';
+}
 
 .menu li:hover > a, .menu li:last-child ul a:hover {
    color: white;
