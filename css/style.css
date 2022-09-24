@@ -1123,35 +1123,51 @@ label > p {
  input:checked + .slider:before {
    transform: translateX(26px);
  }
-/* 
-  input[type="number"] {
+
+/*NUMBER*/
+
+.too {
+   position: relative;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   display: flex;
+   align-items: center;
+}
+
+input[type="number"] {
 	-moz-appearance: textfield;
 	-webkit-appearance: textfield;
 	appearance: textfield;
-    /* background: #021525;  
-   width: 200px;
-   height: 40px;
+   position: absolute;
+   width: 199px;
+   background: #033157;
+   color: #FFFFFF;
+   font-size: 29px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+   opacity: 10%;
+   margin: 5px;
+}
+
+.button {
+   position: absolute;
+   background: darkgoldenrod;
+   width: 15px;
+   text-align: center;
+   pointer-events: none;
+   height: 15px;
 }
  
- input[type="number"]::-webkit-outer-spin-button,
- input[type="number"]::-webkit-inner-spin-button {
-	display: none;
+#plus {
+   left: 89%;
+   top: -15px;
+   line-height: 18px;
 }
-
-#ageUser{
-   position: relative;
-   width: 206px;
-   height: 46px;
-   line-height: 2;
-   background: #033157;
+ 
+#minus {
+   left: 89%;
+   top: 0;
+   line-height: 13px;
 }
-
-#ageUser:after {
-   content: "\e145";
-   font-family: 'Material Symbols Outlined';
-   position: absolute;
-   pointer-events: none;
-   background: #021525;
-   cursor: pointer;
-   font-size: 23px;
- } */
