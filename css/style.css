@@ -1182,9 +1182,10 @@ input[type="number"] {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-   opacity: 10%;
+   opacity: 0%;
    margin: 5px;
 }
+
 
 .button {
    position: absolute;
