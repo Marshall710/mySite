@@ -1,6 +1,30 @@
 /*google*/
 @import  url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
+/*fontsquirrel*/
+@font-face {
+   font-family: 'montserratthin';
+   src: url('../fonts/montserrat-variablefont_wght-webfont.eot');
+   src: url('../fonts/montserrat-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat-variablefont_wght-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat-variablefont_wght-webfont.woff') format('woff'),
+        url('../fonts/montserrat-variablefont_wght-webfont.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+/*everythingfonts*/
+
+@font-face {
+   font-family: 'MontserratVariableFont_wght';
+   src: url('../fonts/MontserratVariableFont_wght.eot');
+   src: url('../fonts/MontserratVariableFont_wght.eot') format('embedded-opentype'),
+        url('../fonts/MontserratVariableFont_wght.woff2') format('woff2'),
+        url('../fonts/MontserratVariableFont_wght.woff') format('woff'),
+        url('../fonts/MontserratVariableFont_wght.ttf') format('truetype'),
+        url('../fonts/MontserratVariableFont_wght.svg#MontserratVariableFont_wght') format('svg');
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,29 +69,7 @@ table {
 	border-spacing: 0;
 }
 
-/*fontsquirrel*/
-@font-face {
-   font-family: 'montserratthin';
-   src: url('../fonts/montserrat-variablefont_wght-webfont.eot');
-   src: url('../fonts/montserrat-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/montserrat-variablefont_wght-webfont.woff2') format('woff2'),
-        url('../fonts/montserrat-variablefont_wght-webfont.woff') format('woff'),
-        url('../fonts/montserrat-variablefont_wght-webfont.ttf') format('truetype');
-   font-weight: normal;
-   font-style: normal;
-}
 
-/*everythingfonts*/
-
-@font-face {
-   font-family: 'MontserratVariableFont_wght';
-   src: url('../fonts/MontserratVariableFont_wght.eot');
-   src: url('../fonts/MontserratVariableFont_wght.eot') format('embedded-opentype'),
-        url('../fonts/MontserratVariableFont_wght.woff2') format('woff2'),
-        url('../fonts/MontserratVariableFont_wght.woff') format('woff'),
-        url('../fonts/MontserratVariableFont_wght.ttf') format('truetype'),
-        url('../fonts/MontserratVariableFont_wght.svg#MontserratVariableFont_wght') format('svg');
-}
 
 /*************************************************************************************/
 html {
