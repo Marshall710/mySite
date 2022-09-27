@@ -611,7 +611,7 @@ a {
    padding: 3px 0px;
 }
 
-ul > a {
+.block li a {
    font-family: 'montserratthin';
 }
 
